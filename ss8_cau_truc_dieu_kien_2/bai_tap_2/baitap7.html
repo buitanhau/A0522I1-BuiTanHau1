@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai phuong trinh bac 2</title>
+</head>
+<body>
+<script>
+    a =parseInt(prompt("Enter a: "));
+    b =parseInt(prompt("Enter b: "));
+    c =parseInt(prompt("Enter c: "));
+    x = (b*b) - 4*a*c;
+    x12 =-b/a;
+    x1 = (-b + x/2)/2*a;
+    x2 = (-b - x/2)/2*a;
+    if (x < 0) {
+        document.write("Phuong trinh vo nghiem!");
+    } else if (x = 0) {
+        document.write("Phuong trinh fco 1 nghiem kep x1 = x2 = " + x12);
+    } else if (x > 0) {
+        document.write("Phuong trinh co 2 nghiem phan biet x1 = " + x1 + "x2 = " + x2 );
+    }
+
+</script>
+
+</body>
+</html>

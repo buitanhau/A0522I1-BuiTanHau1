@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Giai phuong trinh bac 1</title>
 </head>
 <body>
+<script>
+    a =parseInt(prompt("enter a: "));
+    b =parseInt(prompt("enter b: "));
+    x = -b/a
+    if (a == 0 && b == 0) {
+        document.write("Phuong trinh co vo so nghiem !");
+    } else if (a != 0 && b ==0){
+        document.write("Phuong trinh co nghiem x = 0");
+    } else if (a ==0 && b !=0) {
+        document.write("Phuong trinh vo nghiem");
+    } else {
+        document.write("Phuong trinh co nghiem x = " + x);
+    }
+
+</script>
 
 </body>
 </html>

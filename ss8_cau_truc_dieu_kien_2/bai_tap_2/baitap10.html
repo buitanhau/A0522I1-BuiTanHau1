@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    chisodien1 =parseInt(prompt("Nhập số điện tháng trước: "));
+    chisodien2 =parseInt(prompt("Nhập số điện tháng này: "));
+    total = chisodien2 - chisodien1;
+    total1 = total * 1484;
+    total2 = total * 1533;
+    total3 = total * 1786;
+    total4 = total * 2242;
+    total5 = total * 2503;
+    total6 = total * 2587;
+
+    if(total >= 0 && total <= 50) {
+        document.write("Tiền điện tháng này của bạn là: " + total1 + " vnd");
+    }else if(total >= 51 && total <= 100) {
+        document.write("Tiền điện tháng này của bạn là: " + total2 + " vnd");
+    }else if(total >= 101 && total <= 200) {
+        document.write("Tiền điện tháng này của bạn là: " + total3 + " vnd");
+    }else if(total >= 201 && total <= 300) {
+        document.write("Tiền điện tháng này của bạn là: " + total4 + " vnd");
+    }else if(total >= 301 && total <= 400) {
+        document.write("Tiền điện tháng này của bạn là: " + total5 + " vnd");
+    }else if (total > 401) {
+        document.write("Tiền điện tháng này của bạn là: " + total6 + " vnd");
+    }
+</script>
+
+</body>
+</html>

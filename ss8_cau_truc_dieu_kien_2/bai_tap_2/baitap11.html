@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    total =parseInt(prompt("Nhập thu thập tháng này của bạn (đơn vị: triệu vnđ): "));
+    total1 =(total*5)/100 + total;
+    if (total > 0 && total <= 5) {
+        document.write("Thuế thu nhập cá nhân của bạn là : " + total1 + " vnd");
+    } else if (total > 5 && total <= 10) {
+        document.write("Thuế thu nhập cá nhân của bạn là : " + total2 + " vnd");
+    } else if (total > 10 && total <= 18) {
+        document.write("")
+    }
+</script>
+
+</body>
+</html>

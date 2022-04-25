@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhietdo = Number(prompt("Nhap nhiet do"))
+    while (nhietdo<20 || nhietdo>100){
+        if(nhietdo<20){
+            alert("tang nhiet do")
+            nhietdo = Number(prompt("nhap nhiet do"))
+        }else if(nhietdo>100){
+            alert("giam nhiet do")
+            nhietdo = Number(prompt("nhap nhiet do"))
+        }
+    }
+    alert("Nhiet do ok");
+</script>
+
+</body>
+</html>

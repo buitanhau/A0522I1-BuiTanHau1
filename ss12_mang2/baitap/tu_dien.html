@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let eng = ["hello", "good", "monday"];
+    let vn = ["xin chao", "tot", "thu hai"];
+
+    let input = prompt("input keyword:");
+    let index = eng.indexOf(input);
+    if(index != -1){
+        document.write(vn[index]);
+    } else {
+        document.write("Not found!..")
+    }
+</script>
+
+</body>
+</html>

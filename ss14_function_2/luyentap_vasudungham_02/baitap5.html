@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function addNumbers() {
+      let minInNumber = Math.min.apply(Math, Numbers);
+      document.write("Gia tri nho nhat la : " + minInNumber);
+  }
+  let a =  parseInt(prompt("Enter the first number : "));
+  let b = parseInt(prompt("Enter the second number : "));
+  let c = parseInt(prompt("Enter the third number : "));
+  addNumbers()
+  let Numbers = [a, b, c];
+</script>
+</body>
+</html>

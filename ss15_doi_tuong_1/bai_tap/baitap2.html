@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(doC, doF, doKevin) {
+            this.doC = doC;
+            this.doF = doF;
+            this.doKevin = doKevin;
+        }
+        getDoC() {
+            return this.doC;
+        }
+        setDoC(newDoC) {
+            this.doC = newDoC;
+        }
+        getDoF() {
+            return this.doF;
+        }
+        setDoF(newDoF) {
+            this.doF = newDoF;
+        }
+        getDoKevinO() {
+            return this.doKevin;
+        }
+        setDoKevin(newDoKevin) {
+            this.doKevin = newDoKevin;
+        }
+        CToF() {
+          let  f = 1.8 * this.doC + 32;
+          return f
+        }
+        FToC() {
+         let   c = 5/9 * (this.doF - 32);
+         return c
+        }
+        CToKevin() {
+        let    a = this.doC + 273.15;
+        return a
+        }
+    }
+    let temperature = new Temperature(80,100,40)
+    if (temperature.doC>= -273) {
+        document.write(temperature.getDoC() + "do C bang " + temperature.CToF() + " do F " + "<br>");
+        document.write(temperature.getDoF() + "do F bang " + temperature.FToC() + " do C " + "<br>");
+        document.write(temperature.getDoC() + " do C bang" + temperature.CToKevin() + " do Kevin ");
+    }
+</script>
+</body>
+</html>

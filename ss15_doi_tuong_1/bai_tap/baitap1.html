@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+        getLength() {
+            return this.length;
+        }
+        getWidth() {
+            return this.width;
+        }
+        setLength(newLength) {
+            this.length = newLength;
+        }
+        setWidth(newWidth) {
+            this.width = newWidth;
+        }
+        ChuVi() {
+        let area = (this.length+ this.width) / 2;
+        return area
+        }
+        DienTich() {
+         let  s = this.length * this.width;
+         return s
+        }
+    }
+let rectangle = new Rectangle(10,10)
+    document.write("chu vi cua hcn la : " + rectangle.ChuVi() + "<br>");
+    document.write("dien tich cua hcn la : " + rectangle.DienTich());
+</script>
+</body>
+</html>

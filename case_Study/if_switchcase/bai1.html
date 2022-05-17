@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  salary =parseInt(prompt("Enter your salary (dv: trieu vnd ) : "));
+  if (salary == 15) {
+    document.write("Your personal income tax is : " + (20 * 15000000)/100 + "vnd" + "<br>");
+    document.write("Your salary after tax is : " + 12000000 + "vnd");
+  } else if (7 < salary < 15) {
+    document.write("Your personal income tax is :" + (tax = (15 * salary * 1000000)/100) + "vnd" + "<br>" );
+    document.write("Your salary after tax is : " + (salary * 1000000 - tax) + "vnd");
+  } if (salary <=    7) {
+    document.write("Your personal incomtax is : " + (tax = (5 *salary *1000000)/100) + "vnd" + "<br>" );
+    document.write("Your salary after tax is :" + (salary * 1000000 - tax) + "vnd");
+  }
+</script>
+
+</body>
+</html>

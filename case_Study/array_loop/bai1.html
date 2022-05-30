@@ -5,6 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let a = [];
+    let b = [];
+    let temp = 0;
+    let n = parseInt(prompt("Nhap vao do dai cua mang a :"));
+    for ( let i = 0; i <= n; i ++) {
+        a.push(parseInt(prompt("Nhap vao so nguyen : ")));
+    }
+    for (let i = 0; i<= a.length; i ++) {
+        temp += a[i];
+        b[i] = temp;
+    }
+    alert("Mang a la :" + a + "\n" + "Prefix Sums cua mang a la : " + b);
+</script>
 </body>
 </html>

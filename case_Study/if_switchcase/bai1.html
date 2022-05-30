@@ -6,17 +6,18 @@
 </head>
 <body>
 <script>
-  salary =parseInt(prompt("Enter your salary (dv: trieu vnd ) : "));
-  if (salary == 15) {
-    document.write("Your personal income tax is : " + (20 * 15000000)/100 + "vnd" + "<br>");
-    document.write("Your salary after tax is : " + 12000000 + "vnd");
-  } else if (7 < salary < 15) {
-    document.write("Your personal income tax is :" + (tax = (15 * salary * 1000000)/100) + "vnd" + "<br>" );
-    document.write("Your salary after tax is : " + (salary * 1000000 - tax) + "vnd");
-  } if (salary <=    7) {
-    document.write("Your personal incomtax is : " + (tax = (5 *salary *1000000)/100) + "vnd" + "<br>" );
-    document.write("Your salary after tax is :" + (salary * 1000000 - tax) + "vnd");
-  }
+    let salary = parseFloat(prompt("Enter the salary :"));
+    let netSalary = 0;
+    let tax = 0;
+    if (salary >= 15000000) {
+        tax = 20;
+    } else if (salary >= 7000000 ) {
+        tax = 10;
+    } else {
+        tax = 5;
+    }
+    netSalary = salary - salary*tax/100;
+    alert("tax : " + tax  + "net salary : " + netSalary);
 </script>
 
 </body>

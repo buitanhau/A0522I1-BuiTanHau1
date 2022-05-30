@@ -6,15 +6,19 @@
 </head>
 <body>
 <script>
-  let arr = ["o","u","i","a","e","O","U","I","A","E"];
-  let value = prompt("Enter the character : ")    ;
-  let index = arr.indexOf(value)
-  if (index != -1) {
-      document.write(value + "is not a vowel");
-  }else {
-      document.write(value + "is a vowel");
-  }
-
+ let character = prompt("Nhap vao ky tu : ");
+ character = character.toLowerCase();
+ switch (character) {
+     case 'o':
+     case 'u':
+     case 'i':
+     case 'a':
+     case 'e':
+         alert("Day la nguyen am");
+         break;
+         default:
+             alert("Day khong phai la nguyen am");
+ }
 </script>
 </body>
 </html>

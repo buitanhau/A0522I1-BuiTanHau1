@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let rowArr = parseInt(prompt("input row:"));
+    let colArr = parseInt(prompt("input col:"));
+    let myArr2d = new Array(rowArr);
+    for(let row = 0; row < myArr2d.length; row++){
+        myArr2d[row] = Array(colArr);
+        for(let col = 0; col< myArr2d[row].length; col++){
+            let value = prompt("input ["+row+"]["+col+"]");
+            myArr2d[row][col] = value;
+        }
+    }
+    for(let row = 0; row < myArr2d.length; row++){
+        for (let col = 0; col < myArr2d[row].length; col++){
+            document.write(myArr2d[row][col] + " ")
+        }
+        document.write("<br>")
+    }
+</script>
+</body>
+</html>

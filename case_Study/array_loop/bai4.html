@@ -6,15 +6,13 @@
 </head>
 <body>
 <script>
-  let numbers = [1,2,3,4,5,6,7,8,9];
-  let characters = ["mot","hai","ba","bon","nam","sau","bay","tam","chin"];
-  let input = parseInt(prompt("Enter the number : "));
-  let index = numbers.indexOf(input);
-  if (index != -1) {
-    document.write(characters[index]);
-  }else {
-    document.write("Not found !!");
-  }
+    let strNumber = ["khong","mot","hai","ba","bon","nam","sau","bay","tam","chin"];
+    let number = prompt("Nhap vao so muon doc thanh chu : ");
+    let result = "";
+    for (let i = 0; i< number.length; i ++) {
+        result += strNumber[number[i]];
+    }
+    alert("So nhap vao la : " + number + "\n" + "Chuyen thanh chu la : " + result );
 </script>
 </body>
 </html>
